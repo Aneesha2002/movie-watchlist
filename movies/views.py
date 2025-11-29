@@ -1,7 +1,4 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.http import HttpResponse
 
-def home(request):
-    return HttpResponse("Movie Tracker is running!")
+def movie_list(request):
+    return HttpResponse("Your Movies App Works!")
