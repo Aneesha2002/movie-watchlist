@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import MovieList from "./pages/MovieList";
 
 
 const App: React.FC = () => {
@@ -8,7 +9,7 @@ const App: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/login" element={<Login />} />
-        <Route path="/" element={<div>Home Page (Movie List later)</div>} />
+        <Route path="/" element={<MovieList />} />
       </Routes>
     </Router>
   );
